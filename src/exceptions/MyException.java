@@ -1,6 +1,4 @@
-package com.javarush.task.jdk13.task53.task5307.exceptions;
-
-import java.io.IOException;
+package exceptions;
 
 public class MyException extends RuntimeException {
     public MyException() { }
@@ -9,6 +7,8 @@ public class MyException extends RuntimeException {
         super(message);
     }
 
-    public MyException(String s, IOException e) { }
+    public MyException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }
 

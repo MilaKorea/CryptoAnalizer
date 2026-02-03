@@ -2,10 +2,5 @@
 *.iml
 out/
 target/
-*.log
-.DS_Store
-Thumbs.db
-*.tmp
-*.temp
-*.swp
+
 
