@@ -1,6 +1,6 @@
 package service;
 
-import cryptoStyle.TextConverter;
+import converter.TextConverter;
 import exceptions.MyException;
 
 import java.io.BufferedReader;
@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class FileManager {
+public class FileService {
 
     private static final int BUFFER_SIZE = 8192;
 

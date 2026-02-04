@@ -1,4 +1,4 @@
-package cryptoStyle;
+package converter;
 /*
 Для статистического анализа при расшифровке.
  */

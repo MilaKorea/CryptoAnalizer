@@ -1,6 +1,6 @@
 # CryptoAnalyzer
 
-CryptoAnalyzer is a Java application for encrypting and decrypting text files using the Caesar cipher.  
+CryptoAnalyzer is a Java app for encrypting and decrypting text files using the Caesar cipher.  
 The program supports both console and graphical user interface modes and is designed to work with large text files.
 
 ---
@@ -17,7 +17,7 @@ The program supports both console and graphical user interface modes and is desi
 
 ## Available Modes
 
-After запуск the application, the user can choose one of the following modes:
+After запуск the app, the user can choose one of the following modes:
 
 1. **Encryption** — encrypts the input file using a provided key
 2. **Decryption with key** — decrypts the file using a known key
@@ -28,7 +28,7 @@ After запуск the application, the user can choose one of the following mod
 
 ## How It Works
 
-The application reads the input file, applies the selected cryptographic operation, and writes the result to an output file.  
+The app reads the input file, applies the selected cryptographic operation, and writes the result to an output file.  
 File processing is performed in a streaming manner, which allows working with large files without loading them entirely into memory.
 
 ---

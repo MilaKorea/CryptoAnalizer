@@ -1,7 +1,7 @@
-package cryptoStyle.cryptoStyleImpl;
+package converter.impl;
 
-import cryptoStyle.Cipher;
-import cryptoStyle.TextConverter;
+import converter.Cipher;
+import converter.TextConverter;
 
 public class EncryptTextConverter implements TextConverter {
     private final Cipher cipher;
