@@ -1,9 +1,11 @@
 import alphabets.Alphabet;
 import cryptoStyle.*;
+import cryptoStyle.cryptoStyleImpl.DecryptTextConverter;
+import cryptoStyle.cryptoStyleImpl.EncryptTextConverter;
 import service.FileManager;
-import userInterface.ConsoleMode;
+import userInterface.userInterfaceImpl.ConsoleMode;
 import userInterface.CryptoAnalyzerMode;
-import userInterface.GuiMode;
+import userInterface.userInterfaceImpl.GuiMode;
 import userInterface.UIMode;
 
 import java.nio.file.Path;
@@ -16,8 +18,10 @@ import java.util.Scanner;
  */
 public class MainApp {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        private static final int SAMPLE_SIZE = 20_000;
         UIMode ui = null;
+        Scanner scanner = new Scanner(System.in);
+
 
         System.out.println("Hello! Welcome to Crypto Analyzer!");
         System.out.println("😎 😎 😎 😎 😎 😎 😎 😎 😎 😎 😎");
@@ -75,7 +79,7 @@ public class MainApp {
                 converter = new DecryptTextConverter(cipher, key);
                 break;
             case BRUTE_FORCE:
-                String sample = fileManager.readSample(inputPath, 20_000);
+                String sample = fileManager.readSample(inputPath, SAMPLE_SIZE);
                 BruteForce bruteForce = new BruteForce(cipher, alphabet);
                 usedKey = bruteForce.findKey(sample);
                 converter = new DecryptTextConverter(cipher, usedKey);

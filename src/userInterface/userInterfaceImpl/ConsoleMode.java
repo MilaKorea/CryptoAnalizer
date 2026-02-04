@@ -1,8 +1,10 @@
-package userInterface;
+package userInterface.userInterfaceImpl;
 
 import alphabets.Alphabet;
 import exceptions.MyException;
 import service.Validator;
+import userInterface.CryptoAnalyzerMode;
+import userInterface.UIMode;
 
 import java.nio.file.Path;
 import java.util.Scanner;

@@ -1,4 +1,7 @@
-package cryptoStyle;
+package cryptoStyle.cryptoStyleImpl;
+
+import cryptoStyle.Cipher;
+import cryptoStyle.TextConverter;
 
 public class DecryptTextConverter implements TextConverter {
     private final Cipher cipher;

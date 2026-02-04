@@ -28,8 +28,8 @@ public class Validator {
         } catch (InvalidPathException e) {
             throw new MyException("Invalid path.");
         }
-        if (!Files.exists(path)) throw new MyException("File not found: " + path);
-        if (!Files.isRegularFile(path)) throw new MyException("Not a file: " + path);
+        if (Files.notExists(path)) throw new MyException("File not found: " + path);
+        if (Files.isRegularFile(path) == false) throw new MyException("Not a file: " + path);
         return path;
     }
 
