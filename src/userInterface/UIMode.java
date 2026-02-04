@@ -8,5 +8,5 @@ public interface UIMode {
     Path outputFilePath(Path inputFilePath);
     int chooseKey();
     void showMessage(String message);
-
+    default void close() {}
 }
